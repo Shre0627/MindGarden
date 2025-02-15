@@ -3,4 +3,40 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    width: 1200px; 
+    height: 900px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+}
+
+.bgH1 {
+    background-color: white;
+    color: #658C5E;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Chicle;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    margin: auto; /* resizes the button size to fit the text */
+    margin-top: 100px;
+    align-items: center;
+}
+
+.data-svg-wrapper {
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    fill: rgba(255, 255, 255, 0.00);
+    position: absolute;
+    box-shadow: 1px 5px 8px;
+    border-radius: 10px;
+    margin-top: 280px;
+    padding: 2px;
+    padding-bottom: 5px;
+    left: 0px;
 }

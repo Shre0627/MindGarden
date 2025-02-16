@@ -54,6 +54,17 @@ document.getElementById("start").addEventListener("click", startTimer);
 document.getElementById("stop").addEventListener("click", stopTimer);
 document.getElementById("reset").addEventListener("click", resetTimer);
 
+function editTime(){
+    const editBtn = document.getElementById("editBtn");
+    const editTimer = document.getElementById("editTimer");
+    editBtn.addEventListener("click", function(){
+        if(editTimer.style.display === "none" || editTimer.style.display === ""){
+            editTimer.style.display = "block";
+        } else {
+            editTimer.style.display = "none";
+        }
+    });
+}
 
 //NAVIGATION BAR
 function openMenu() {

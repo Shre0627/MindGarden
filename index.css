@@ -26,6 +26,35 @@ body {
     margin: auto; /* resizes the button size to fit the text */
     margin-top: 100px;
     align-items: center;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+
+}
+.to-do{ 
+    background-color:#658C5E;
+    height: 50px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 30px;
+   margin-left : 40px;
+    text-align: center;
+    color:white;
+}
+.box-list{
+ background-color:#FFF9DC;
+ margin-top: 20px;
+width:90%;
+height: 500px;
+border-radius:20px;
+margin-left: 40px;
+
+
+
+
+
 }
 
 .data-svg-wrapper {

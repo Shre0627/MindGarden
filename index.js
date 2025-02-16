@@ -64,7 +64,7 @@ function hideFlower() {
     flower.style.display = "none";
 }
 
-hideFlower(); // Ensure the flower is hidden initially
+//hideFlower(); // Ensure the flower is hidden initially
 
 function startTimer() {
     if (remainingTime <= 0 || isNaN(remainingTime)) {

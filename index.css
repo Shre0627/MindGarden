@@ -42,6 +42,7 @@ body {
     left: 0px;
 }
 
+
 #menu {
     background: none;
     border: none;
@@ -174,17 +175,29 @@ body {
     color: white;
     border-radius: 5px;
 }
+#start:hover{
+    background-color: #3c5837;
+    cursor: pointer;
+}
 
 #stop{
     background-color: #6F5840;
     color: white;
     border-radius: 5px;
 }
+#stop:hover{
+    background-color: #53412f;
+    cursor: pointer;
+}
 
 #reset{
     background-color: #C4A77D;
     color: white;
     border-radius: 5px;
+}
+#reset:hover{
+    background-color: #8f7252;
+    cursor: pointer;
 }
 
 #duration {
@@ -210,6 +223,7 @@ body {
     height: 64px;
     flex-shrink: 0;
     margin-left: 280px;
+    user-select: none;
 }
 
 
@@ -224,6 +238,10 @@ body {
     margin-left: 5px;
     height: 30px;
     width: 50px;
+}
+#setDuration:hover{
+    background-color: #3c5837;
+    cursor: pointer;
 }
 
 #duration{

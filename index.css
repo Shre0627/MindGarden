@@ -26,6 +26,9 @@ body {
     margin: auto; /* resizes the button size to fit the text */
     margin-top: 100px;
     align-items: center;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .data-svg-wrapper {
@@ -50,4 +53,31 @@ body {
 
 #navBar {
     display: none; /* Initially hide the menu bar */
+    z-index: 1;
+}
+
+.to-do{ 
+    background-color:#658C5E;
+    height: 45px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left : 40px;
+    text-align: center;
+    color:white;
+    font-family: Chicle;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.box-list{
+    background-color:#FFF9DC;
+    margin-top: 20px;
+    width:90%;
+    height: 300px;
+    border-radius:20px;
+    margin-left: 40px;
 }

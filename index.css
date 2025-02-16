@@ -4,7 +4,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     width: 1200px; 
-    height: 900px;
+    height: 100vh;
     display: flex;
     margin: 0;
     justify-content: center;
@@ -39,4 +39,63 @@ body {
     padding: 2px;
     padding-bottom: 5px;
     left: 0px;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+#timer{
+    clear: both;
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stop {
+    background-color: #FF9800;
+    color: white;
+}
+
+#reset {
+    background-color: #F44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
 }

@@ -29,7 +29,9 @@ body {
     top: 0;
     margin-top: 100px;
     border-radius: 20px;
+  
 }
+
 
 .bgH1 {
   color:#658C5E;
@@ -87,9 +89,7 @@ nav{
 .widget-bar{
     flex-shrink: 0;
     position: fixed;
-    left: 0;
-    
-    
+
 }
 .Ach{
     background-color:#658C5E;

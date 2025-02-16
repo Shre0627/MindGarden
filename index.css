@@ -54,6 +54,7 @@ body {
 #navBar {
     display: none; /* Initially hide the menu bar */
     z-index: 1;
+    position: relative;
 }
 
 .to-do{ 
@@ -80,4 +81,72 @@ body {
     height: 300px;
     border-radius:20px;
     margin-left: 40px;
+    overflow-y: auto; /* Add vertical scrollbar */
+}
+
+#task {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#addtask {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#taskList li button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #658C5E;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+}
+
+#taskList li span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.box-h2 {
+    color: black;
+    text-align: left;
+    font-family: Chicle;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    margin: auto; /* resizes the button size to fit the text */
+    margin-top: 20px;
+    margin-left: 20px;
 }

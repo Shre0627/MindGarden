@@ -23,21 +23,37 @@ if (taskInput){
 
 function addTask() {
     console.log('addTask trigger');
-    let task = document.getElementById('task');
-    console.log(task.value);
+    let taskInput = document.getElementById('task');
+    let taskValue = taskInput.value.trim();
 
-    let taskVal = task.value;
-    if (taskVal === '') {
+    if (taskValue === '') {
         alert('Task cannot be empty');
         return;
     }
 
-    let newTask = document.createElement('li');
-    newTask.appendChild(document.createTextNode(taskVal));
-
     let taskList = document.getElementById('taskList');
-    console.log(newTask);
-    taskList.appendChild(newTask);
-    task.value = '';
+    let listItem = document.createElement('li');
+
+    var checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.addEventListener('click', function () {
+        listItem.classList.toggle('completed', checkbox.checked);
+    });
+
+    var taskText = document.createElement('span');
+    taskText.textContent = taskValue;
+
+    var deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', function() {
+        taskList.removeChild(listItem);
+    });
+
+    listItem.appendChild(checkbox);
+    listItem.appendChild(taskText);
+    listItem.appendChild(deleteButton);
+    taskList.appendChild(listItem);
+
+    taskInput.value = '';
 }
 

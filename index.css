@@ -33,28 +33,16 @@ body {
 
 
 }
-.to-do{ 
-    background-color:#658C5E;
-    height: 50px;
-    width: 90%;
-    border-radius: 20px;
-    margin-top: 30px;
-   margin-left : 40px;
-    text-align: center;
-    color:white;
-}
 .box-list{
- background-color:#FFF9DC;
- margin-top: 20px;
-width:90%;
-height: 500px;
-border-radius:20px;
-margin-left: 40px;
-
-
-
-
-
+    background-color:#FFF9DC;
+    margin-top: 20px;
+    width:90%;
+    height: 500px;
+    border-radius:20px;
+    margin-left: 40px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .data-svg-wrapper {
@@ -64,67 +52,46 @@ margin-left: 40px;
     position: absolute;
     box-shadow: 1px 5px 8px;
     border-radius: 10px;
-    margin-top: 280px;
-    padding: 2px;
-    padding-bottom: 5px;
+    top: 0px;
     left: 0px;
 }
 
-.container {
-    text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    color: #4CAF50;
-}
-
-#timer{
-    clear: both;
-}
-
-input {
-    width: 150px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-
-p {
-    font-size: 2em;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.buttons button {
-    margin: 5px;
-    padding: 10px 15px;
-    font-size: 1rem;
+#menu {
+    background: none;
     border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-#start {
-    background-color: #4CAF50;
-    color: white;
+#navBar {
+    display: none; /* Initially hide the menu bar */
+    z-index: 1;
 }
 
-#stop {
-    background-color: #FF9800;
-    color: white;
+.to-do{ 
+    background-color:#658C5E;
+    height: 45px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left : 40px;
+    text-align: center;
+    color:white;
+    font-family: Chicle;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
 }
 
-#reset {
-    background-color: #F44336;
-    color: white;
-}
-
-button:hover {
-    opacity: 0.8;
+.box-list{
+    background-color:#FFF9DC;
+    margin-top: 20px;
+    width:90%;
+    height: 300px;
+    border-radius:20px;
+    margin-left: 40px;
 }

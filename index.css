@@ -48,13 +48,9 @@ body {
  background-color:#FFF9DC;
  margin-top: 20px;
 width:90%;
-height: 500px;
+height: 300px;
 border-radius:20px;
 margin-left: 40px;
-
-
-
-
 
 }
 
@@ -79,5 +75,14 @@ margin-left: 40px;
    margin-left : 40px;
     text-align: center;
     color:white;
+
+}
+.box-ach{
+    background-color:#FFF9DC;
+    margin-top: 20px;
+   width:90%;
+   height: 300px;
+   border-radius:20px;
+   margin-left: 40px;
 
 }

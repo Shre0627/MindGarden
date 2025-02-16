@@ -1,0 +1,29 @@
+#menu {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#navBar {
+    display: none; /* Initially hide the menu bar */
+    z-index: 1;
+}
+.to-do{ 
+    background-color:#658C5E;
+    height: 45px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left : 40px;
+    text-align: center;
+    color:white;
+    font-family: Chicle;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}

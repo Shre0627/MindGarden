@@ -42,6 +42,9 @@ body {
     display: inline-block;
     cursor: pointer;
     border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 #navBar {
@@ -98,17 +101,20 @@ body {
 }
 #start{
     background-color:#658C5E;
-    color: white
+    color: white;
+    border-radius: 5px;
 }
 
 #stop{
     background-color: #6F5840;
-    color: white
+    color: white;
+    border-radius: 5px;
 }
 
 #reset{
     background-color: #C4A77D;
-    color: white
+    color: white;
+    border-radius: 5px;
 }
 
 #duration {
@@ -163,4 +169,12 @@ p {
     letter-spacing: 5px;
     text-align: center;
     color: #658C5E;
+}
+
+#flower{
+    display: none;
+    margin-left: 110px;
+    scale: 0.8;
+    padding-top: 10px;
+    height: 5px;
 }

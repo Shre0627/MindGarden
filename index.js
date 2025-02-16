@@ -54,6 +54,41 @@ document.getElementById("start").addEventListener("click", startTimer);
 document.getElementById("stop").addEventListener("click", stopTimer);
 document.getElementById("reset").addEventListener("click", resetTimer);
 
+//TIMER-FLOWER SPAWN
+const flower = document.getElementById("flower");
+function showFlower() {
+    flower.style.display = "block";
+}
+
+function hideFlower() {
+    flower.style.display = "none";
+}
+
+hideFlower(); // Ensure the flower is hidden initially
+
+function startTimer() {
+    if (remainingTime <= 0 || isNaN(remainingTime)) {
+        alert("Please set a duration first!");
+        return;
+    }
+
+    if (timerInterval) clearInterval(timerInterval); // Prevent multiple intervals
+
+    timerInterval = setInterval(function () {
+        const minutes = Math.floor(remainingTime / 60);
+        const seconds = remainingTime % 60;
+
+        updateDisplay(minutes, seconds);
+
+        if (remainingTime <= 0) {
+            clearInterval(timerInterval);
+            alert("Time's up!");
+            showFlower();
+        } else {
+            remainingTime--;
+        }
+    }, 1000);
+}
 
 //NAVIGATION BAR
 function openMenu() {
@@ -98,3 +133,4 @@ function addTask() {
     taskList.appendChild(newTask);
     task.value = '';
 }
+

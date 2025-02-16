@@ -33,17 +33,7 @@ body {
 
 
 }
-.box-list{
-    background-color:#FFF9DC;
-    margin-top: 20px;
-    width:90%;
-    height: 500px;
-    border-radius:20px;
-    margin-left: 40px;
-    padding:10px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .data-svg-wrapper {
     flex-shrink: 0;

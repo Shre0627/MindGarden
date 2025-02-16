@@ -8,7 +8,7 @@ function updateDisplay(minutes, seconds) {
 }
 
 function startTimer() {
-    if (remainingTime <= 0) {
+    if (remainingTime <= 0 || isNaN(remainingTime)) {
         alert("Please set a duration first!");
         return;
     }
@@ -16,8 +16,8 @@ function startTimer() {
     if (timerInterval) clearInterval(timerInterval); // Prevent multiple intervals
 
     timerInterval = setInterval(function () {
-        let minutes = Math.floor(remainingTime / 60);
-        let seconds = remainingTime % 60;
+        const minutes = Math.floor(remainingTime / 60);
+        const seconds = remainingTime % 60;
 
         updateDisplay(minutes, seconds);
 
@@ -41,7 +41,7 @@ function resetTimer() {
 }
 
 document.getElementById("setDuration").addEventListener("click", function () {
-    let inputMinutes = parseInt(document.getElementById("duration").value);
+    const inputMinutes = parseInt(document.getElementById("duration").value);
     if (isNaN(inputMinutes) || inputMinutes <= 0) {
         alert("Please enter a valid duration in minutes.");
         return;
@@ -57,7 +57,7 @@ document.getElementById("reset").addEventListener("click", resetTimer);
 
 //NAVIGATION BAR
 function openMenu() {
-    var navBar = document.getElementById("navBar");
+    const navBar = document.getElementById("navBar");
     if(navBar.style.display === "none" || navBar.style.display === "") {
         navBar.style.display = "block";
     } else {
@@ -65,12 +65,12 @@ function openMenu() {
     }
 }
 
-let button = document.getElementById('addtask');
+const button = document.getElementById('addtask');
 if (button) {
     button.addEventListener('click', addTask);
 }
 
-let taskInput = document.getElementById('task');
+const taskInput = document.getElementById('task');
 if (taskInput){
     taskInput.addEventListener('keypress', function(e){
         if (e.key === 'Enter') {
@@ -81,21 +81,20 @@ if (taskInput){
 
 function addTask() {
     console.log('addTask trigger');
-    let task = document.getElementById('task');
+    const task = document.getElementById('task');
     console.log(task.value);
 
-    let taskVal = task.value;
+    const taskVal = task.value;
     if (taskVal === '') {
         alert('Task cannot be empty');
         return;
     }
 
-    let newTask = document.createElement('li');
+    const newTask = document.createElement('li');
     newTask.appendChild(document.createTextNode(taskVal));
 
-    let taskList = document.getElementById('taskList');
+    const taskList = document.getElementById('taskList');
     console.log(newTask);
     taskList.appendChild(newTask);
     task.value = '';
 }
-

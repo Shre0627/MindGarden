@@ -101,6 +101,7 @@ body {
 
 
 #clock{
+    position-anchor: center;
     width: 247px;
     height: 241px;
     flex-shrink: 0;

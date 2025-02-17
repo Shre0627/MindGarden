@@ -1,4 +1,7 @@
 
-document.getElementById("menu").addEventListener("click", function() {
-    document.getElementById("widget-bar").classList.toggle("show");
-});
+function OpenMenu(){
+    document.getElementById("menu").addEventListener("click", function() {
+        document.getElementById("green-box").classList.toggle("show");
+    });
+
+}

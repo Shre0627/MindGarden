@@ -122,7 +122,7 @@ nav{
    border-radius:20px;
    margin-left: 40px;
    display: none;
-   opacity: none;
+   opacity: 1;
 
 }
 

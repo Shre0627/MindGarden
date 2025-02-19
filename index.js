@@ -1,4 +1,9 @@
-let menu = document.getElementsByClassName("widget-bar");
-function toggleMenu() {
-  menu.classList.toggle("open-menu");
-} 
+function openMenu() {
+   let nav = document.getElementsByClassName("green-box")[0];
+   if(nav.style.display === "none"|| nav.style.display === "") {
+      nav.style.display = "block";
+   } else {
+      nav.style.display = "none";
+   }
+}
+

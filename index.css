@@ -31,6 +31,7 @@ body {
     border-radius: 20px;
     transition: right 0.3s ease-in-out;
     left:-600;
+    display: none;
 
   
 }
@@ -75,6 +76,7 @@ body {
    margin-left : 40px;
     text-align: center;
     color:white;
+    opacity: 1;
 }
 .box-list{
  background-color:#FFF9DC;
@@ -83,6 +85,7 @@ width:90%;
 height: 300px;
 border-radius:20px;
 margin-left: 40px;
+display: none;
 
 }
 
@@ -118,6 +121,8 @@ nav{
    height: 300px;
    border-radius:20px;
    margin-left: 40px;
+   display: none;
+   opacity: none;
 
 }
 
